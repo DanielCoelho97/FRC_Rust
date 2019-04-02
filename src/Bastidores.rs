@@ -1,8 +1,11 @@
 struct Bastidores {
     parent: Pessoa;
+    let mut funcao: String;
 };
 
 impl Bastidores {
-    let  mut funcao: String;
+    fn origin(&mut self, funcao: String) -> Bastidores {
+        Bastidores { self.funcao = funcao }
+    }
 }
 
